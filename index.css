@@ -11,7 +11,7 @@ body {
     background-color: rgb(26, 29, 54);
     color: white;
     font-size: 30px;
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid rgb(95, 41, 15);
     text-shadow: 1px 5px 1px rgb(95, 41, 15);
 }
 .center {
@@ -34,7 +34,7 @@ body {
     justify-content: space-around;
     padding-bottom: 30px;
     background-color: blanchedalmond;
-    border-bottom: 6px solid white;
+    border-bottom: 6px solid rgb(95, 41, 15);
     color: white;
     text-shadow: 2px 2px 2px rgb(95, 41, 15);
 }
@@ -60,6 +60,7 @@ body {
     background-color: white;
     justify-content: center;
     padding: 0px 38px;
+    border-radius: 15%;
 }
 .ss {
     display: flex;
@@ -67,6 +68,7 @@ body {
     font-size: 20px;
 }
 .container {
+    margin-top: 100px;
     background-color: rgb(26, 29, 54);
     display: flex;
     justify-content: space-around;
@@ -120,7 +122,23 @@ body {
     border: 4px solid rgb(95, 41, 15)
 }
 .btns:hover {
-    font-size: 21px;
+    font-size: 24px;
     cursor: pointer;
 }
-
+.result {
+    padding-top: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#res-border {
+    border: 2px solid rgb(95, 41, 15);
+    background-color: rgb(95, 41, 15);
+    width: 500px;
+}
+#winloss-el {
+    text-shadow: 2px 2px 2px rgb(95, 41, 15);
+    font-size: 20px; 
+}

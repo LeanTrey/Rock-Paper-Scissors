@@ -12,31 +12,32 @@ const emojis = [rockEmoji, paperEmoji, scissorsEmoji];
 let playerScore = 0
 let cpuScore = 0
 
+
 function paperFunction() {
 playerEl.textContent = '✋'
 const randomNum = Math.floor(Math.random() * 3);
 cpuEl.textContent = emojis[randomNum]
 if (randomNum === 0) {
-    yourScoreEl.textContent += " " + "I"
     playerScore += 1
+    yourScoreEl.textContent = "Your Score: " + playerScore
 } else if (randomNum === 1) {
     //nothing
 } else {
-    cpuScoreEl.textContent += " " + 'I'
     cpuScore += 1
+    cpuScoreEl.textContent = "CPU Score: " + cpuScore
 }
 if (playerScore === 5) {
-    winLossEl.textContent = "Congrats you have beat the computer!!"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"
+    yourScoreEl.textContent = "Winner!!"
+    cpuScoreEl.textContent = "Loser"
+    winLossEl.textContent = "Congrats you have beat the computer!!, Press Reset Button To Play Again"
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
 }
 if (cpuScore === 5) {
-    winLossEl.textContent = "You Lost :( Play Again"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"    
+    winLossEl.textContent = "You Lost :( Play Again, Press Reset Button To Try Again"
+    yourScoreEl.textContent = "Loser"
+    cpuScoreEl.textContent = "Winner!!:"
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
@@ -50,24 +51,24 @@ cpuEl.textContent = emojis[randomNum]
 if (randomNum === 0) {
     // nothing, it's a tie
 } else if (randomNum === 1) {
-    cpuScoreEl.textContent += " " + 'I'
     cpuScore += 1
+    cpuScoreEl.textContent = "CPU Score: " + cpuScore
 } else {
-    yourScoreEl.textContent += " " + "I"
     playerScore += 1
+    yourScoreEl.textContent = "Your Score: " + playerScore
 }
 if (playerScore === 5) {
-    winLossEl.textContent = "Congrats you have beat the computer!!"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"
+    yourScoreEl.textContent = "Winner!!:"
+    cpuScoreEl.textContent = "Loser"
+    winLossEl.textContent = "Congrats you have beat the computer!!, Press Reset Button To Play Again"
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
 }
 if (cpuScore === 5) {
-    winLossEl.textContent = "You Lost :( Play Again"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"    
+    winLossEl.textContent = "You Lost :( Play Again, Press Reset Button To Try Again"
+    yourScoreEl.textContent = "Loser"
+    cpuScoreEl.textContent = "Winner!!:"  
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
@@ -79,26 +80,26 @@ playerEl.textContent = '✌️'
 const randomNum = Math.floor(Math.random() * 3);
 cpuEl.textContent = emojis[randomNum]
 if (randomNum === 0) {
-    cpuScoreEl.textContent += " " + 'I'
     cpuScore += 1
+    cpuScoreEl.textContent = "CPU Score: " + cpuScore
 } else if (randomNum === 1) {
-    yourScoreEl.textContent += " " + "I"
     playerScore += 1
+    yourScoreEl.textContent = "Your Score: " + playerScore
 } else {
     //nothing
 }
 if (playerScore === 5) {
-    winLossEl.textContent = "Congrats you have beat the computer!!"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"
+    yourScoreEl.textContent = "Winner!!:"
+    cpuScoreEl.textContent = "Loser"
+    winLossEl.textContent = "Congrats you have beat the computer!!, Press Reset Button To Play Again"
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
 }
 if (cpuScore === 5) {
-    winLossEl.textContent = "You Lost :( Play Again"
-    yourScoreEl.textContent = "Your Score:"
-    cpuScoreEl.textContent = "CPU Score:"    
+    winLossEl.textContent = "You Lost :( Play Again, Press Reset Button To Try Again"
+    yourScoreEl.textContent = "Loser"
+    cpuScoreEl.textContent = "Winner!!:"
 } else {
     //nothing
     winLossEl.textContent = "You got this keep going"
